@@ -12,6 +12,11 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+	html
+	{ 
+		direction:rtl;
+	}
+
 	body
 	{
 		background-image:			url('images/overlay.png'),		url('images/bg.jpg');
@@ -39,6 +44,7 @@
 		font-weight: 300;
 		color: #777777;
 	}
+
 	
 	strong, b
 	{
@@ -48,6 +54,8 @@
 
 	h1, h2, h3, h4,h5, h6
 	{
+		direction:rtl;
+		text-align:right;
 		font-weight: 400;
 		color: #363636;
 	}
@@ -95,6 +103,11 @@
 	{
 		margin-bottom: 2em;
 	}
+
+	/* Map */
+	#map {
+		height: 450px;
+	}
 		
 	/* Table */
 	
@@ -119,7 +132,7 @@
 				
 				table.default th
 				{
-					text-align: left;
+					text-align: right;
 					font-weight: 400;
 					padding: 0.5em 1em 0.5em 1em;
 				}
@@ -429,6 +442,7 @@
 	.panel
 	{
 		position: relative;
+		direction:rtl;
 	}
 
 	/* Me */
